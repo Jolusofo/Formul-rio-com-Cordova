@@ -1,0 +1,54 @@
+*{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+
+}
+.hidden{
+	display: none;
+}
+.page{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#telaLogin{
+	background: red;
+}
+#telaUsuarios{
+	background: #f0f0f0;
+}
+.navbar{
+	background:#2c3e50;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	border-bottom: 2px solid orangered;
+	text-transform: uppercase;
+}
+.navbar span{
+	font-size: 17px;
+	line-height: 55px;
+	color: white;
+}
+.btnFooter{
+	position: fixed;
+	width: 100%;
+	padding: 15px 0px;
+	text-align: center;
+	background: #222;
+	color: white;
+	bottom: 0;
+	border: 0;
+	text-transform: uppercase;
+}
+.lista{
+	list-style-type: none;
+	padding: 0;
+	background: white;
+}
+.item-lista{
+	display: block;
+	padding: 15px 5px;
+	border-bottom: 1px solid #bbb;
+}

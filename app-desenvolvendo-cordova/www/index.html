@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <title>Controle de Usuários</title>
+</head>
+<body>
+    <div id="telaLogin" class="page">
+        <div class="painel-login">
+            <div class="login-header">
+                <img src="img/man.png" alt="">
+            </div>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo" >
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="enredeco">Endereço</label>
+                  <input type="text" class="form-control" id="endereco" placeholder="Rua  Bobo da corte, nº 0">
+                </div>
+
+                <div class="col-md-2">
+                <div class="form-group">
+
+                  <label for="telefone">Telefone</label>
+                  
+                  <input type="text" class="form-control" id="telefone" placeholder="Telefone ou Celular">
+                </div>
+                <div class="form-group">
+
+                    <label for="fax">Telefone Fax</label>
+                    
+                    <input type="text" class="form-control" id="fax" placeholder="Opcional">
+                  </div>
+                </div>
+
+
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="uf">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Nome da Cidade ou Distrito">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEstado">Estado</label>
+                    <select id="uf" class="form-control" id="estados">
+                      <option value="">Escolher...</option>
+                      <option value="acre">Acre (AC)</option>
+                      <option value="alagoas">Alagoas (AL)</option>
+                      <option value="amapa">Amapá (AP)</option>
+                      <option value="amazonas">Amazonas (AM)</option>
+                      <option value="bahia">Bahia (BA)</option>
+                      <option value="ceara">Ceara (CE)</option>
+                      <option value="DF">Distrito Federal (DF)</option>
+                      <option value="ES">Espírito Santo (ES)</option>
+                      <option value="goias">Goiás (GO)</option>
+                      <option value="maranhao">Maranhão (MA)</option>
+                      <option value="mato grosso">Mato Grosso (MT)</option>
+                      <option value="mato grosso do sul">Mato Grosso do Sul (MS)</option>
+                      <option value="minas gerais">Minas Gerais (MG)</option>
+                      <option value="para">Pará (PA)</option>
+                      <option value="paraiba">Paraíba (PB)</option>
+                      <option value="parana">Paraná (PR)</option>
+                      <option value="pernanbuco">Pernambuco (PE)</option>
+                      <option value="piaui">Piauí (PI)</option>
+                      <option value="rio de janeiro">Rio de Janeiro (RJ)</option>
+                      <option value="rio grande do norte">Rio Grande do Norte (RN)</option>
+                      <option value="rio grande do sul">Rio Grande do Sul (RS)</option>
+                      <option value="rondonia">Rondônia (RO)</option>
+                      <option value="roraima">Roraima (RR)</option>
+                      <option value="santa catarina">Santa Catarina (SC)</option>
+                      <option value="sao paulo">São Paulo (SP)</option>
+                      <option value="sergipe">Sergipe (SE)</option>
+                      <option value="tocantins">Tocantins (TO)</option>
+                      
+                      
+
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep">
+                  </div>
+
+                     <div  id="sexo">
+
+                  <div class="form-check form-check-inline col-md-2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio" value="opcao1">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radio" value="opcao2">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                  </div>
+                   </div>
+
+                </div>
+                <div class="form-group">
+                  
+                </div>
+                <div class="col-md-12"></div>
+                <button type="submit" class="btn btn-primary" id="confirmar" onclick="confirmar()">Confirmar</button>
+                <button type="submit" class="btn btn-primary" id="limpar" onclick="limpar()">Limpar</button>
+                <button type="submit" class="btn btn-primary" id="fechar" >Fechar</button>
+                
+              </form>
+            </div>
+        </div>
+    </div>
+
+  
+
+        <button class="btnFooter">
+            Dados Principais do Cliente
+        </button>
+        
+    </div>
+</body>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
